@@ -1,0 +1,114 @@
+/* Estilos Generales */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url('img/wp13112018-arena-breakout-wallpapers.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: transparent;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar .navbar-brand img {
+  height: 40px; /* Ajuste del tamaño del logo */
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 600;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+  background-color: white; /* Líneas blancas en el menú hamburguesa */
+}
+
+/* Hero Section */
+.hero {
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hero .lead {
+  font-size: 1.5rem;
+}
+
+/* Sección de Descripción */
+.text-orange {
+  color: #ff6a00;
+}
+
+.icon-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.icon-box h4 {
+  color: white;
+}
+
+.icon-box i {
+  color: #ff6a00;
+}
+
+/* Tabla de Clasificación */
+.table {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.table-bordered th, .table-bordered td {
+  border: 1px solid white;
+}
+
+.table-dark {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.table-hover tbody tr:hover {
+  background-color: #ff6a00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-nav {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .navbar-toggler {
+      display: block;
+  }
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
