@@ -1,114 +1,178 @@
-/* Estilos Generales */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* Aplica la fuente a toda la página */
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: url('wp13112018-arena-breakout-wallpapers.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: white;
-  margin: 0;
-  padding: 0;
-}
-
-/* Navbar */
-.navbar {
-  background-color: transparent;
-  padding: 20px 0;
-  position: fixed;
+  font-family: 'MiFuente', sans-serif; /* Usa la fuente personalizada */
+  background-color: #2d78aa;
+  margin: 0px; /* Elimina márgenes por defecto */
+  padding: 0px; /* Elimina paddings por defecto */}
+/* Barra de navegación */
+.navbar.bg-custom {
+  background-color: #1f252500; /* Fondo personalizado */
+  color: white; /* Textos blancos */
+  position: fixed; /* Posición fija para que siempre esté visible */
   width: 100%;
-  z-index: 10;
-}
-
-.navbar .navbar-brand img {
-  height: 40px; /* Ajuste del tamaño del logo */
-}
-
-.navbar-nav .nav-link {
-  color: white !important;
-  font-weight: 600;
-}
-
-.navbar-toggler {
-  border-color: white;
+  z-index: 10; /* Colocar por encima del hero */
 }
 
 .navbar-toggler-icon {
-  background-color: transparent;
+  background-color: white; /* Icono del menú hamburguesa blanco */
 }
 
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after,
-.navbar-toggler-icon span {
-  background-color: white; /* Líneas blancas en el menú hamburguesa */
+.image-container {
+  display: flex; /* Flexbox para centrar contenido */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  height: 3vh; /* Tamaño completo del viewport */
 }
 
-/* Hero Section */
+/* Imagen responsive */
+.responsive-image {
+  max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción */
+}
+
+.nav-link {
+  color: white !important; /* Textos del menú blancos */
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  color: #FF4500 !important; /* Color de hover para los enlaces */
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: auto;
+}
+
+/* Hero */
 .hero {
-  background-size: cover;
-  padding: 100px 0;
-  text-align: center;
+  position: relative;
+  width: 100%;
+  height: auto; /* Mantener las proporciones de la imagen */
+  overflow: hidden;
+  margin: 0; /* Eliminar cualquier margen superior */
+  padding: 0; /* Sin padding para ajustarse al borde superior */
 }
 
-.hero h1 {
-  font-size: 3rem;
-  color: white;
-  margin-bottom: 20px;
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.hero .lead {
-  font-size: 1.5rem;
+/* Titulares */
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-/* Sección de Descripción */
+/* Sección de textos */
 .text-orange {
-  color: #ff6a00;
+  color: #e95916; /* Naranja más fuerte y rojizo */
 }
 
+.text-white {
+  color: white !important;
+}
+
+/* Sección Canje de Puntos */
 .icon-box {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
-  margin: 10px;
-  text-align: center;
+  padding: 20px;
+  color: white;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.icon-box h4 {
+.icon-box:hover {
+  background: #FF4500;
   color: white;
+  transform: translateY(-10px);
 }
 
 .icon-box i {
-  color: #ff6a00;
+  color: #FF4500;
+  margin-bottom: 10px;
 }
 
-/* Tabla de Clasificación */
-.table {
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  margin-top: 30px;
-}
-
-.table-bordered th, .table-bordered td {
-  border: 1px solid white;
-}
-
+/* Tabla de clasificación */
 .table-dark {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(31, 37, 37, 0.9);
+  color: white;
 }
 
 .table-hover tbody tr:hover {
-  background-color: #ff6a00;
+  background-color: #FF4500;
+  color: white;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar-nav {
-      display: flex;
-      justify-content: space-between;
-  }
-
-  .navbar-toggler {
-      display: block;
-  }
-}
-
+/* Footer */
 footer {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #222222;
+  color: white;
+  padding: 20px;
+}
+
+/* Estilo para enlaces del footer */
+footer a {
+  color: #FF4500;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.azul {
+background-color: azu;
+}
+
+.blanco {
+  color: rgb(252, 249, 245);
+  
+}
+
+@font-face {
+  font-family: 'ti';
+  src: url('./fonts/VECTRO-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'te';
+  src: url('./fonts/Fontspring-DEMO-avioniccond-book.otf') format('truetype');
+}
+
+/* Clase para la primera fuente */
+.ti {
+  font-family: 'ti', sans-serif; /* Fallback: sans-serif */
+}
+
+/* Clase para la segunda fuente */
+.te {
+  font-family: 'te', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(181, 219, 217);
+}
+
+.fondotetera {
+  width: 100vw; /* Todo el ancho del viewport */
+  height: 300px; /* Altura del contenedor */
+  background-image: url('img/tetera.png'); /* Ruta de la imagen */
+  background-size: cover; /* Imagen cubre todo el contenedor */
+  background-repeat: no-repeat; /* Evitar repeticiones */
+  background-position: right top; /* Imagen a sangre a la derecha y arriba */
+  margin: 0; /* Elimina márgenes globales */
+  padding: 0; /* Elimina relleno global */
+}
+
+.fondotetera .col-8 {
+  background-color: rgba(255, 255, 255, 0); /* Fondo blanco semitransparente */
+  padding: 20px; /* Añade espacio dentro del bloque de texto */
+  border-radius: 5px; /* Suaviza bordes para un diseño limpio */
+  margin-left: 20px; /* Separa el bloque de texto del borde izquierdo */
+  height: auto; /* Permite que crezca con el contenido */
 }
